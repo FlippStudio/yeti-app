@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 const Utilities = () => {
   return (
     <>
-      <Container fixed>
+      <Container maxWidth="xl">
         <Box>
           <Typography
             component="h2"
@@ -32,9 +32,7 @@ const Utilities = () => {
           </Box>
         </Box>
       </Container>
-      <Box>
-
-      </Box>
+      <Box></Box>
     </>
   );
 };

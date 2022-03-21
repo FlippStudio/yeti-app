@@ -1,7 +1,8 @@
-import ResponsiveAppBar from "./components/MainNavigation";
-import Welcome from "./components/Welcome";
-import Utilities from "./components/Utilities";
-import Traits from "./components/Traits";
+import ResponsiveAppBar from "./components/sections/MainNavigation";
+import Welcome from "./components/sections/Welcome";
+import Utilities from "./components/sections/Utilities";
+import Traits from "./components/sections/Traits";
+import Roadmap from "./components/sections/Roadmap";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Welcome />
       <Utilities />
       <Traits />
+      <Roadmap />
     </>
   );
 }

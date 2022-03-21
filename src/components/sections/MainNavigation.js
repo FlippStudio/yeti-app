@@ -5,9 +5,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import logo from "../images/logo.svg";
+import logo from "../../images/logo.svg";
 
-import Socials from "./Socials";
+import Socials from "../Socials";
 
 const pages = ["About us", "Yetis", "Story", "Wishlist", "Roadmap"];
 
@@ -36,7 +36,7 @@ const ResponsiveAppBar = () => {
       sx={{ boxShadow: 0, backgroundColor: "transparent" }}
     >
       <Container
-        fixed
+        maxWidth='xl'
         sx={{ borderBottom: "0.5px solid rgba(255,255,255,0.24)"}}
         className='container'
       >

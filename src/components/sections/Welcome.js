@@ -3,13 +3,13 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import discord from "../images/socials/discord-welcome.svg";
-import arrow from '../images/arrow.svg'
+import discord from "../../images/socials/discord-welcome.svg";
+import arrow from "../../images/arrow.svg";
 
 const Welcome = () => {
   return (
     <Container
-      fixed
+      maxWidth="xl"
       sx={{ marginTop: "94px", position: "relative" }}
       className="container"
     >
@@ -136,9 +136,9 @@ const Welcome = () => {
             </Grid>
           </Grid>
           <Grid item xs={7}>
-              <div className="arrow-space">
-                  <img src={arrow} alt="Move down" />
-              </div>
+            <div className="arrow-space">
+              <img src={arrow} alt="Move down" />
+            </div>
           </Grid>
         </Grid>
       </Box>
