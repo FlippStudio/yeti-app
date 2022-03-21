@@ -1,6 +1,7 @@
 import ResponsiveAppBar from "./components/MainNavigation";
-import Welcome from './components/Welcome'
-import Utilities from './components/Utilities'
+import Welcome from "./components/Welcome";
+import Utilities from "./components/Utilities";
+import Traits from "./components/Traits";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <ResponsiveAppBar />
       <Welcome />
       <Utilities />
+      <Traits />
     </>
   );
 }

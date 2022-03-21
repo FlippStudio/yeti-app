@@ -65,3 +65,12 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
 }
+.traits{
+  background: #091434;
+  padding-top: 250px;
+  margin-top: -100px;
+}
+.img-fluid{
+  width: 100%;
+  max-height: 577px;
+}

@@ -9,7 +9,7 @@ import arrow from '../images/arrow.svg'
 const Welcome = () => {
   return (
     <Container
-      maxWidth="xl"
+      fixed
       sx={{ marginTop: "94px", position: "relative" }}
       className="container"
     >

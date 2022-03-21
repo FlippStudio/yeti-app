@@ -36,7 +36,7 @@ const ResponsiveAppBar = () => {
       sx={{ boxShadow: 0, backgroundColor: "transparent" }}
     >
       <Container
-        maxWidth="xl"
+        fixed
         sx={{ borderBottom: "0.5px solid rgba(255,255,255,0.24)"}}
         className='container'
       >
