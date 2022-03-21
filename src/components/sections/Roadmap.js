@@ -2,6 +2,8 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import StepComplete from "../StepComplete";
+import Step from "../Step";
 
 const steps = [
   {
@@ -53,7 +55,25 @@ const Roadmap = () => {
             Road map
           </Typography>
         </Box>
-        <Grid container spacing={4}></Grid>
+        <Grid container spacing={4}>
+          {steps.map((step) =>
+            step.status ? (
+              <StepComplete
+                key={step.id}
+                percent={step.percent}
+                name={step.name}
+                description={step.description}
+              />
+            ) : (
+              <Step
+                key={step.id}
+                percent={step.percent}
+                name={step.name}
+                description={step.description}
+              />
+            )
+          )}
+        </Grid>
       </Container>
     </section>
   );

@@ -13,8 +13,26 @@ import traitFour from "../../images/traits/trait-4.svg";
 import traitFive from "../../images/traits/trait-5.svg";
 import traitSix from "../../images/traits/trait-6.svg";
 import Trait from "../Trait";
+import YetiHelp from "../YetiHelp";
 
 const traits = [traitOne, traitTwo, traitThree, traitFour, traitFive, traitSix];
+const yetis = [
+  {
+    id: 1,
+    image: help,
+    text: "We help animals in need all over the world! 10% of sales go to animal shelters!",
+  },
+  {
+    id: 2,
+    image: iglo,
+    text: "Each animal that has received help from us is warmly welcomed in our igloo",
+  },
+  {
+    id: 3,
+    image: meeting,
+    text: "We organize meetings 3 times a year for all YETI owners!",
+  },
+];
 
 const Traits = () => {
   return (
@@ -46,64 +64,13 @@ const Traits = () => {
                 Yeti help animals!
               </Typography>
               <Grid container spacing={2}>
-                <Grid item xs={3} marginBottom={"40px"}>
-                  <Box display={"flex"} justifyContent={"center"}>
-                    <img src={help} alt="Yeti's helping" />
-                  </Box>
-                </Grid>
-                <Grid item xs={9} marginBottom={"40px"}>
-                  <Typography component="div" fontSize={20} lineHeight={"32px"}>
-                    We help animals in need all over the world!
-                  </Typography>
-                  <Typography
-                    compotent="div"
-                    fontSize={20}
-                    lineHeight={"32px"}
-                    fontWeight={"700"}
-                  >
-                    10% of sales go to animal shelters!
-                  </Typography>
-                </Grid>
-                <Grid item xs={3} marginBottom={"40px"}>
-                  <Box display={"flex"} justifyContent={"center"}>
-                    <img src={iglo} alt="Yeti build iglo" />
-                  </Box>
-                </Grid>
-                <Grid item xs={9} marginBottom={"40px"}>
-                  <Typography component="div" fontSize={20} lineHeight={"32px"}>
-                    Each animal that has received help from us
-                  </Typography>
-                  <Typography
-                    compotent="div"
-                    fontSize={20}
-                    lineHeight={"32px"}
-                    fontWeight={"700"}
-                  >
-                    is warmly welcomed in our igloo
-                  </Typography>
-                </Grid>
-                <Grid item xs={3}>
-                  <Box display={"flex"} justifyContent={"center"}>
-                    <img src={meeting} alt="Yeti's meetings" />
-                  </Box>
-                </Grid>
-                <Grid item xs={9}>
-                  <Typography
-                    component="span"
-                    fontSize={20}
-                    lineHeight={"32px"}
-                  >
-                    We organize
-                  </Typography>
-                  <Typography
-                    compotent="span"
-                    fontSize={20}
-                    lineHeight={"32px"}
-                    fontWeight={"700"}
-                  >
-                    meetings 3 times a year for all YETI owners!
-                  </Typography>
-                </Grid>
+                {yetis.map((yeti) => (
+                  <YetiHelp
+                    key={yeti.id}
+                    imageUrl={yeti.image}
+                    text={yeti.text}
+                  />
+                ))}
               </Grid>
             </Box>
           </Grid>
@@ -121,8 +88,8 @@ const Traits = () => {
           </Typography>
           <Grid container spacing={3}>
             {traits.map((url, index) => (
-              <Grid item xs={2}>
-                <Trait imageUrl={url} key={index} />
+              <Grid item xs={2} key={index}>
+                <Trait imageUrl={url} />
               </Grid>
             ))}
           </Grid>
