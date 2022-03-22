@@ -6,7 +6,7 @@ import Slider from "../Slider";
 const Utilities = () => {
   return (
     <>
-      <section className="utilities">
+      <section className="utilities" id="uti">
         <Container maxWidth="xl">
           <Box>
             <Typography

@@ -20,9 +20,6 @@ const FaqAccordion = ({ title, content }) => {
           expandIcon={<ArrowDownwardIcon fontSize="large" />}
           aria-controls="panel1a-content"
           id="panel1a-header"
-          sx={{
-            marginBottom: "0",
-          }}
         >
           <Typography fontSize={24} lineHeight={"32px"} className="acc-title">
             {title}

@@ -17,6 +17,7 @@
 
 body {
   background: #091434;
+  scroll-behavior: smooth;
 }
 
 .first-view {
@@ -52,7 +53,7 @@ body {
 }
 
 .social {
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(0, 166, 241, 0.4);
   width: 32px;
   height: 32px;
   border-radius: 100%;
@@ -161,6 +162,9 @@ body {
 }
 .Mui-expanded .acc-title {
   color: #00a6f1 !important;
+}
+.Mui-expanded .MuiAccordionSummary-content, .MuiAccordionSummary-content {
+  margin: 16px 0 !important;
 }
 .check-back {
   width: 100%;

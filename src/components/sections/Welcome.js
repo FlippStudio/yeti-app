@@ -6,6 +6,12 @@ import Button from "@mui/material/Button";
 import discord from "../../images/socials/discord-welcome.svg";
 import arrow from "../../images/arrow.svg";
 
+const scrollTo = (e) => {
+    let utilities = document.getElementById("uti");
+    e.preventDefault(); // Stop Page Reloading
+    utilities && utilities.scrollIntoView({behavior: "smooth"});
+}
+
 const Welcome = () => {
   return (
     <Container
@@ -14,7 +20,7 @@ const Welcome = () => {
       className="container"
     >
       <div className="yeti"></div>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, position: "relative", zIndex: 10 }}>
         <Grid container spacing={2}>
           <Grid item xs={5}>
             <Typography
@@ -143,7 +149,20 @@ const Welcome = () => {
           </Grid>
           <Grid item xs={7} zIndex={10} position={"relative"}>
             <div className="arrow-space">
-              <img src={arrow} alt="Move down" />
+              <Button
+                variant="contained"
+                sx={{
+                  fontSize: 16,
+                  backgroundColor: "#184093",
+                  width: 73,
+                  height: 73,
+                  borderRadius: "100%",
+                  border: "1px solid #00A6F1",
+                }}
+                onClick={scrollTo}
+              >
+                <img src={arrow} alt="Scroll to next section" height={30} />
+              </Button>
             </div>
           </Grid>
         </Grid>
