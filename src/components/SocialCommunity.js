@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 
-const SocialCommunity = ({imageUrl, name}) => {
+const SocialCommunity = ({ imageUrl, name }) => {
   return (
     <a href="#" className="social-link">
-      <Box display={"flex"} alignItems={"center"} marginX={'40px'}>
+      <Box display={"flex"} alignItems={"center"} marginX={"40px"}>
         <img src={imageUrl} alt="Community" />
         <Typography
           component="span"

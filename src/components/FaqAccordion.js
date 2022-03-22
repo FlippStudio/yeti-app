@@ -5,7 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
-const FaqAccordion = ({title, content}) => {
+const FaqAccordion = ({ title, content }) => {
   return (
     <div>
       <Accordion
@@ -35,7 +35,7 @@ const FaqAccordion = ({title, content}) => {
         </AccordionDetails>
       </Accordion>
     </div>
-  )
-}
+  );
+};
 
-export default FaqAccordion
+export default FaqAccordion;

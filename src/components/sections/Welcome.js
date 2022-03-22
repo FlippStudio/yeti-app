@@ -90,7 +90,13 @@ const Welcome = () => {
                 </a>
               </Grid>
             </Grid>
-            <Grid container spacing={2} marginTop={"130px"} zIndex={10} position={'relative'}>
+            <Grid
+              container
+              spacing={2}
+              marginTop={"130px"}
+              zIndex={10}
+              position={"relative"}
+            >
               <Grid item xs={4}>
                 <Typography
                   component="p"
@@ -135,7 +141,7 @@ const Welcome = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={7} zIndex={10} position={'relative'}>
+          <Grid item xs={7} zIndex={10} position={"relative"}>
             <div className="arrow-space">
               <img src={arrow} alt="Move down" />
             </div>

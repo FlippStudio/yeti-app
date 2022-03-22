@@ -9,7 +9,7 @@ const YetiHelp = ({ imageUrl, text }) => {
           <img src={imageUrl} alt="Yeti's helping" />
         </Box>
       </Grid>
-      <Grid item xs={9} marginBottom={"40px"}>
+      <Grid item xs={8} marginBottom={"40px"}>
         <div className="yeti-help">{text}</div>
       </Grid>
     </>

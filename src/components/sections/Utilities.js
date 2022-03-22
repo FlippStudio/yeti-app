@@ -1,50 +1,7 @@
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
-import yetiOne from "../../images/yetis/yeti-1.svg";
-import yetiTwo from "../../images/yetis/yeti-2.svg";
-import yetiFour from "../../images/yetis/yeti-4.svg";
-import yetiFive from "../../images/yetis/yeti-5.svg";
-import Yeti from "../Yeti";
-
-const yetis = [
-  {
-    id: 1,
-    name: "YETI NAME #12345",
-    imageUrl: yetiOne,
-  },
-  {
-    id: 2,
-    name: "YETI NAME #12345",
-    imageUrl: yetiTwo,
-  },
-  {
-    id: 3,
-    name: "YETI NAME #12345",
-    imageUrl: yetiFour,
-  },
-  {
-    id: 4,
-    name: "YETI NAME #12345",
-    imageUrl: yetiOne,
-  },
-  {
-    id: 5,
-    name: "YETI NAME #12345",
-    imageUrl: yetiFive,
-  },
-  {
-    id: 6,
-    name: "YETI NAME #12345",
-    imageUrl: yetiFour,
-  },
-  {
-    id: 7,
-    name: "YETI NAME #12345",
-    imageUrl: yetiTwo,
-  },
-];
+import Slider from "../Slider";
 
 const Utilities = () => {
   return (
@@ -71,7 +28,7 @@ const Utilities = () => {
                 marginTop={1}
                 maxWidth={720}
                 textAlign={"center"}
-                marginBottom={"144px"}
+                marginBottom={"56px"}
               >
                 Duis egestas rutrum erat vel finibus. Lorem ipsum dolor sit
                 amet, consectetur adipiscing elit. Donec dapibus purus eget nisl
@@ -81,23 +38,8 @@ const Utilities = () => {
           </Box>
         </Container>
       </section>
-      <Box
-        display={"flex"}
-        justifyContent={"center"}
-        marginTop={"-175px"}
-        overflow={"hidden"}
-      >
-        <Stack direction="row" spacing={4}>
-          {yetis.map((yeti) => (
-            <Yeti
-              key={yeti.id}
-              title={yeti.name}
-              imageUrl={yeti.imageUrl}
-              transform={yeti.transform}
-            />
-          ))}
-        </Stack>
-      </Box>
+
+      <Slider />
     </>
   );
 };
